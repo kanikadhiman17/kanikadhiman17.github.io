@@ -475,35 +475,47 @@ body {
 
     .hero-right {
         text-align: center;
+        width: 100%;
     }
 
     .hero-bio {
-        text-align: center;
+        text-align: justify;
+        /* Keep justified text for readability */
+        margin-bottom: 1rem;
     }
 
     .social-links {
         justify-content: center;
+        margin-top: 1rem;
     }
 
     .bio-with-logos {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .university-logos::before,
-    .university-logos::after {
-        display: none;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem;
     }
 
     .university-logos {
         flex-direction: row;
-        gap: 1rem;
-        margin-top: 1.5rem;
+        gap: 1.5rem;
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
     }
 
     .university-logo {
         width: 45px;
         height: 45px;
+    }
+
+    .section-title {
+        width: 100%;
+        margin-left: 0;
+        transform: none;
+        max-width: none;
+        padding: 0;
+        font-size: 1.5rem;
     }
 
     .hero-title {
