@@ -54,11 +54,11 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-    min-height: 65vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem 3rem;
     background: var(--bg-primary);
     position: relative;
     overflow: hidden;
@@ -67,27 +67,39 @@ body {
 
 
 .hero-content {
-    text-align: center;
-    max-width: 700px;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
     position: relative;
     z-index: 1;
 }
 
+.hero-left {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
 
+.hero-right {
+    flex: 1;
+    text-align: left;
+}
 
 .profile-image-container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     display: inline-block;
     position: relative;
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow-md);
     transition: var(--transition);
 }
 
@@ -115,10 +127,16 @@ body {
     font-size: 1.0625rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    flex: 1;
+}
+
+.bio-with-logos {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
 }
 
 .hero-education {
@@ -147,8 +165,9 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .social-link {
@@ -179,9 +198,48 @@ body {
     color: var(--accent-primary);
 }
 
+/* ===== University Logos - Vertical on Right ===== */
+.university-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.university-logo {
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.university-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.university-logo:hover {
+    transform: translateX(3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-primary);
+}
+
+.university-logo:hover img {
+    transform: scale(1.1);
+}
+
 /* ===== Section Styles ===== */
 .experience-section {
-    padding: 4rem 0;
+    padding: 3rem 0 4.5rem;
     position: relative;
     background: var(--bg-primary);
 }
@@ -193,6 +251,24 @@ body {
     margin-bottom: 3rem;
     color: var(--text-primary);
     letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100vw;
+    max-width: 1200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    height: 1px;
+    background-color: var(--border-color);
+    flex: 1;
 }
 
 /* ===== Timeline Layout ===== */
@@ -391,6 +467,45 @@ body {
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        text-align: center;
+    }
+
+    .hero-bio {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .bio-with-logos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .university-logos::before,
+    .university-logos::after {
+        display: none;
+    }
+
+    .university-logos {
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .university-logo {
+        width: 45px;
+        height: 45px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
