@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Kanika Dhiman - Software Engineer at Apple Inc. specializing in systems, automation, and backend development. MS in Computer Science from Georgia Tech.">
+        content="Kanika Dhiman - Software Engineer at Apple Inc. building automation infrastructure for RF technologies. MS in Computer Science from Georgia Tech.">
     <meta name="author" content="Kanika Dhiman">
     <title>Kanika Dhiman | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
@@ -16,150 +16,191 @@
 </head>
 
 <body>
-    <!-- Hero Section -->
+    <!-- ===== Hero ===== -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <div class="hero-left">
+            <!-- Left: profile photo -->
+            <div class="hero-photo">
                 <div class="profile-image-container">
-                    <img src="data/profile_picture.jpg" alt="Kanika Dhiman" class="profile-image">
+                    <img src="data/profile_photo.jpg" alt="Kanika Dhiman" class="profile-image">
                 </div>
             </div>
-            <div class="hero-right">
+
+            <!-- Middle: intro + bio -->
+            <div class="hero-intro">
                 <h1 class="hero-title">Kanika Dhiman</h1>
                 <p class="hero-subtitle">Software Engineer at Apple Inc.</p>
+                <p class="hero-bio">
+                    I&rsquo;m a software engineer who loves turning messy, manual processes into clean, reliable
+                    automation. At Apple, I build automation infrastructure for RF technologies across global
+                    factory production &mdash; and I&rsquo;m happiest designing backend systems, wiring up
+                    AI&#8209;driven tooling, and finding the one leverage point that saves a team thousands of hours.
+                    I care about distributed systems that don&rsquo;t break, developer experience, and tools people
+                    actually enjoy using.
+                </p>
+            </div>
 
-                <!-- Bio paragraph with logos -->
-                <div class="bio-with-logos">
-                    <p class="hero-bio">
-                        Software Engineer developing automation infrastructure for RF technologies across global factory
-                        production. Did my MS from <a href="https://www.gatech.edu" target="_blank"
-                            rel="noopener noreferrer" class="bio-link">Georgia Tech</a>, had the opportunity to work
-                        with <a href="https://www.cse.iitb.ac.in/~dbp/" target="_blank" rel="noopener noreferrer"
-                            class="bio-link">Prof. DB Phatak</a> at <a href="https://www.iitb.ac.in" target="_blank"
-                            rel="noopener noreferrer" class="bio-link">IIT Bombay</a>, and graduated from <a
-                            href="https://www.iiitdmj.ac.in" target="_blank" rel="noopener noreferrer"
-                            class="bio-link">IIIT
-                            Jabalpur</a> as Institute Gold Medalist.
-                    </p>
-
-                    <!-- University Logos - Vertical aligned with bio -->
-                    <div class="university-logos">
-                        <a href="https://www.gatech.edu" target="_blank" rel="noopener noreferrer"
-                            class="university-logo">
-                            <img src="logos/gatech.png" alt="Georgia Tech">
-                        </a>
-                        <a href="https://www.iitb.ac.in" target="_blank" rel="noopener noreferrer"
-                            class="university-logo">
-                            <img src="logos/iitb.png" alt="IIT Bombay">
-                        </a>
-                        <a href="https://www.iiitdmj.ac.in" target="_blank" rel="noopener noreferrer"
-                            class="university-logo">
-                            <img src="logos/iiitj.png" alt="IIIT Jabalpur">
-                        </a>
+            <!-- Right: education cards, stacked -->
+            <div class="hero-education">
+                <a href="https://www.gatech.edu" target="_blank" rel="noopener noreferrer" class="edu-card">
+                    <div class="edu-logo">
+                        <img src="logos/gatech.png" alt="Georgia Tech">
                     </div>
-                </div>
-
-                <!-- Social Links -->
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/kanika-dhiman/" target="_blank" rel="noopener noreferrer"
-                        class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="mailto:dhimankanika17@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="data/Kanika_Dhiman_CV.pdf" download="Kanika_Dhiman_CV.pdf" class="social-link">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>Download CV</span>
-                    </a>
-                </div>
+                    <div class="edu-info">
+                        <h3 class="edu-school">Georgia Tech</h3>
+                        <p class="edu-degree">M.S. Computer Science</p>
+                        <p class="edu-detail">Computing Systems</p>
+                        <p class="edu-meta">GPA 4.0 &middot; 2022&ndash;2024</p>
+                    </div>
+                </a>
+                <a href="https://www.iiitdmj.ac.in" target="_blank" rel="noopener noreferrer" class="edu-card">
+                    <div class="edu-logo">
+                        <img src="logos/iiitj.png" alt="IIIT Jabalpur">
+                    </div>
+                    <div class="edu-info">
+                        <h3 class="edu-school">IIIT Jabalpur</h3>
+                        <p class="edu-degree">B.Tech, Computer Science</p>
+                        <p class="edu-detail"><i class="fas fa-medal"></i> Institute Gold Medalist</p>
+                        <p class="edu-meta">GPA 9.4 &middot; 2016&ndash;2020</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Industrial Experience Section -->
-    <section class="experience-section" id="experience">
+    <!-- ===== Journey (story timeline, newest at top &rarr; roots at bottom) ===== -->
+    <section class="story-section" id="journey">
         <div class="container">
-            <h2 class="section-title">Industrial Experience</h2>
-            <div class="timeline">
-                <!-- Apple Inc. -->
-                <div class="timeline-item">
-                    <div class="timeline-logo">
-                        <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
+            <h2 class="section-title">The Story So Far</h2>
+            <p class="story-caption">A journey that reads from the ground up &mdash; scroll down to the roots.</p>
+
+            <div class="story-timeline">
+                <svg class="story-connector" aria-hidden="true"></svg>
+
+                <!-- Apple Inc. — Full-time (newest, top) — logo right -->
+                <article class="story-item logo-right">
+                    <div class="story-content">
+                        <span class="story-date">Jul 2024 &ndash; Present</span>
+                        <h3 class="story-company">Apple Inc.</h3>
+                        <p class="story-role">Software Engineer</p>
+                        <p class="story-text">
+                            Building automation systems across RF technologies (Bluetooth, NFC, WiFi, Cellular) for
+                            factory production build verification, and pioneering AI-driven tooling that aggregates
+                            thousands of test reports to accelerate cross-team approvals.
+                        </p>
+                    </div>
+                    <div class="story-node">
+                        <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="story-logo">
                             <img src="logos/apple.png" alt="Apple Inc.">
                         </a>
                     </div>
-                    <div class="timeline-content">
-                        <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="timeline-link">
-                            <h3 class="company-name">Apple Inc.</h3>
-                            <p class="position">Software Engineer</p>
-                            <p class="duration">Jul 2024 - Present • May 2023 - Aug 2023</p>
-                            <p class="description">
-                                Developing automation infrastructure for RF testing across global factory operations.
-                                Leading cross-functional initiatives and driving AI-powered tooling for manufacturing
-                                excellence.
-                            </p>
+                </article>
+
+                <!-- Apple Inc. — Internship — logo left -->
+                <article class="story-item logo-left">
+                    <div class="story-content">
+                        <span class="story-date">May 2023 &ndash; Dec 2023</span>
+                        <h3 class="story-company">Apple Inc.</h3>
+                        <p class="story-role">Software Engineer Intern</p>
+                        <p class="story-text">
+                            Joined the RF automation team and shipped a reusable backend template with auth,
+                            notifications, theming, and role-based access &mdash; cutting the time to stand up new
+                            team apps by 40%.
+                        </p>
+                    </div>
+                    <div class="story-node">
+                        <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="story-logo">
+                            <img src="logos/apple.png" alt="Apple Inc.">
                         </a>
                     </div>
-                </div>
+                </article>
 
-
-                <!-- Zolo -->
-                <div class="timeline-item">
-                    <div class="timeline-logo">
-                        <a href="https://www.zolostays.com" target="_blank" rel="noopener noreferrer">
+                <!-- Zolo — logo right -->
+                <article class="story-item logo-right">
+                    <div class="story-content">
+                        <span class="story-date">Sep 2020 &ndash; Jul 2022</span>
+                        <h3 class="story-company">Zolo Property Solutions</h3>
+                        <p class="story-role">Software Development Engineer (Backend)</p>
+                        <p class="story-text">
+                            Built scalable REST APIs over event-driven microservices serving 50,000+ tenants,
+                            integrated payments, and shipped projects that saved ~20,000 papers a month and lifted
+                            monthly revenue by $10K+ under tight COVID constraints.
+                        </p>
+                    </div>
+                    <div class="story-node">
+                        <a href="https://www.zolostays.com" target="_blank" rel="noopener noreferrer"
+                            class="story-logo">
                             <img src="logos/zolo.png" alt="Zolo Property Solutions">
                         </a>
                     </div>
-                    <div class="timeline-content">
-                        <a href="https://www.zolostays.com" target="_blank" rel="noopener noreferrer"
-                            class="timeline-link">
-                            <h3 class="company-name">Zolo Property Solutions</h3>
-                            <p class="position">Software Development Engineer (Backend)</p>
-                            <p class="duration">Sep 2020 - Jul 2022</p>
-                            <p class="description">
-                                Architected backend systems and microservices serving 50,000+ users. Developed ML-driven
-                                recommendation engine and critical infrastructure during high-growth phase.
-                            </p>
-                        </a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Oracle -->
-                <div class="timeline-item">
-                    <div class="timeline-logo">
-                        <a href="https://www.oracle.com" target="_blank" rel="noopener noreferrer">
+                <!-- Oracle — logo left -->
+                <article class="story-item logo-left">
+                    <div class="story-content">
+                        <span class="story-date">May 2019 &ndash; Nov 2019</span>
+                        <h3 class="story-company">Oracle</h3>
+                        <p class="story-role">Software Engineer Intern</p>
+                        <p class="story-text">
+                            Architected a generalized automation platform for Retail Cloud Applications with
+                            concurrent Selenium execution and custom reporting &mdash; cutting manual testing time by
+                            90% and saving 200+ engineering hours a month.
+                        </p>
+                    </div>
+                    <div class="story-node">
+                        <a href="https://www.oracle.com" target="_blank" rel="noopener noreferrer" class="story-logo">
                             <img src="logos/oracle.png" alt="Oracle">
                         </a>
                     </div>
-                    <div class="timeline-content">
-                        <a href="https://www.oracle.com" target="_blank" rel="noopener noreferrer"
-                            class="timeline-link">
-                            <h3 class="company-name">Oracle</h3>
-                            <p class="position">Software Engineer Intern</p>
-                            <p class="duration">May 2019 - Nov 2019</p>
-                            <p class="description">
-                                Built end-to-end test automation platform for Oracle Retail Cloud, reducing manual
-                                testing
-                                cycles by 90% and improving deployment velocity.
-                            </p>
+                </article>
+
+                <!-- IIT Bombay (oldest, the root) — logo right -->
+                <article class="story-item logo-right root">
+                    <div class="story-content">
+                        <span class="story-date">May 2018 &ndash; Jul 2018</span>
+                        <h3 class="story-company">IIT Bombay</h3>
+                        <p class="story-role">Project Intern &middot; Ekalavya Summer Internship, FRG</p>
+                        <p class="story-text">
+                            Where it began. Worked with Prof. DB Phatak to build a real-time notification system for
+                            the Collaborative-Communities portal, improving engagement by 35% across 10,000+ active
+                            users &mdash; and learned to write tests like they matter.
+                        </p>
+                    </div>
+                    <div class="story-node">
+                        <a href="https://www.iitb.ac.in" target="_blank" rel="noopener noreferrer" class="story-logo">
+                            <img src="logos/iitb.png" alt="IIT Bombay">
                         </a>
                     </div>
-                </div>
-
-
+                </article>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- ===== Connect ===== -->
+    <footer class="footer" id="connect">
         <div class="container">
-            <p>&copy; 2025 Kanika Dhiman. All rights reserved.</p>
+            <h2 class="connect-title">Let&rsquo;s connect</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/kanika-dhiman/" target="_blank" rel="noopener noreferrer"
+                    class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:dhimankanika17@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/kanikadhiman17" target="_blank" rel="noopener noreferrer"
+                    class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="data/Kanika_Dhiman_CV.pdf" download="Kanika_Dhiman_CV.pdf" class="social-link">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+            <p class="footer-meta">&copy; 2026 Kanika Dhiman</p>
             <p class="footer-location">
                 <i class="fas fa-map-marker-alt"></i> Cupertino, CA
             </p>
