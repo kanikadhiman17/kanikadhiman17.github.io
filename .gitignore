@@ -1,0 +1,6 @@
+# Ignore all hidden files and folders in this dir and all subdirs
+.*
+!/.gitignore
+
+# (common offenders, covered by the rule above but listed for clarity)
+.DS_Store
