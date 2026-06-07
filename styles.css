@@ -245,16 +245,16 @@ body {
 
 .story-connector path {
     fill: none;
-    stroke: hsl(0, 0%, 72%);
+    stroke: hsl(0, 0%, 90%);
     stroke-width: 2.5;
     stroke-linejoin: miter;
     stroke-linecap: round;
-    opacity: 0.7;
+    opacity: 0.45;
 }
 
 .story-connector circle {
-    fill: hsl(0, 0%, 64%);
-    opacity: 0.8;
+    fill: hsl(0, 0%, 88%);
+    opacity: 0.45;
 }
 
 /* Each role: a wide content tile on one side, logo+date floating on the other */
@@ -492,6 +492,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     /* Each row: logo on top, full-width tile below */
     .story-connector {
         display: none;
